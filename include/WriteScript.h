@@ -1,0 +1,4 @@
+#ifndef PGCLOSER_V1_1_WRITESCRIPT_H
+#define PGCLOSER_V1_1_WRITESCRIPT_H
+
+#endif

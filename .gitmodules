@@ -1,0 +1,6 @@
+[submodule "submodules/bedtools2"]
+	path = submodules/bedtools2
+	url = https://github.com/arq5x/bedtools2.git
+[submodule "submodules/bowtie2"]
+	path = submodules/bowtie2
+	url = https://github.com/BenLangmead/bowtie2.git
