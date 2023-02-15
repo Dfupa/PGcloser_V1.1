@@ -264,7 +264,7 @@ void sam_assort_tobed(char* samfile, char* distfile, char* bedfile_name, char* b
 
 void Bed_Run(char* workpath, char* fapath, char* bedpath, char* sub_chrname){
 	char ShellCommand[CMD_NUM];
-	char* Bedtools_path = (char*)"/gpfs01/software/bio/bedtools2/bin/bedtools";
+	char* Bedtools_path = (char*)"$(pwd)/bedtools2/bin/bedtools";
 	
 	snprintf(ShellCommand, sizeof(ShellCommand), "%s getfasta -fi %s -bed %s -name -fo %s.bedout", Bedtools_path, fapath, bedpath, sub_chrname);
 	system(ShellCommand);

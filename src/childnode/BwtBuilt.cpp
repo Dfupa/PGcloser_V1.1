@@ -6,7 +6,7 @@ int BwtBuilt(int argc,char *argv[]){
 	long StartTime = time((time_t*)NULL);
     printf("start time = %ld\n", StartTime);
 	
-	char bowtie_cmd[CMD_NUM] = "/gpfs01/software/bio/bowtie2-2.2.4/bowtie2-build";
+	char bowtie_cmd[CMD_NUM] = "$(pwd)/submodules/bowtie2/bowtie2-build";
 	char bwt_prename[CMD_NUM] = "Ref_Genome_Bwt";
 	char PathWork[CMD_NUM];
 	char ShellCommand[CMD_NUM];

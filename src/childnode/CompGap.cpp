@@ -52,7 +52,7 @@ void Bwt_Run(char* workpath, char* falist, char* btpath){
 				cout << "The falist file "<<  vec_faname[i] <<" is not found!" << endl;
 			}
 			else{
-				char bowtie_cmd[CMD_NUM] = "/gpfs01/software/bio/bowtie2-2.2.4/bowtie2";
+				char bowtie_cmd[CMD_NUM] = "$(pwd)/submodules/bowtie2/bowtie2";
 				if(access(bowtie_cmd, F_OK) != 0){
 					cout << "bowtie2 is not found" << endl;
 					break;
