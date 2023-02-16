@@ -17,7 +17,7 @@ void wait_bjobs(char* cmd){
 			FILE *pf = popen(ShellCommand, "r");
 			fread(resultm, sizeof(resultm), 1, pf);
 			pclose(pf);	
-			if(*resultm == '\0' || resultm == '\0'){
+			if(*resultm == '\0' || resultm == nullptr){
 				break;
 			}
 			lastTime = now;  
